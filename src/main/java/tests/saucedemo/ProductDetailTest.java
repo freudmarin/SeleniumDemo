@@ -1,4 +1,4 @@
-package tests;
+package tests.saucedemo;
 
 import interfaces.TestCase;
 import org.openqa.selenium.By;

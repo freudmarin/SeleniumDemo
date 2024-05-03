@@ -1,4 +1,4 @@
-package tests;
+package tests.saucedemo;
 
 import interfaces.TestCase;
 import org.openqa.selenium.By;
@@ -36,7 +36,6 @@ public class ProductFilterTest implements TestCase {
 
             boolean priceSortedCorrectly = isSortedByPrice(driver);
             log.info("Sorted by Price (Low to High): {}", (priceSortedCorrectly ? "Passed" : "Failed"));
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             WebElement dropdown2 = waitForProductSortContainer.until(ExpectedConditions.refreshed(
                     ExpectedConditions.elementToBeClickable(By.className("product_sort_container"))
             ));
